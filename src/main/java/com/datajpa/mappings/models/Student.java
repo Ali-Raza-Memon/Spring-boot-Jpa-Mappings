@@ -20,7 +20,7 @@ public class Student {
     private String studentName;
     private String about;
 
-    @OneToOne
+    @OneToOne(mappedBy = "student")
     private Laptop laptop;
 
 }

@@ -1,9 +1,6 @@
 package com.datajpa.mappings.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="jpa_laptop")
@@ -14,6 +11,7 @@ public class Laptop {
     private String brand;
 
     @OneToOne
+    @JoinColumn(name="student_id")
     private Student student;
 
 }
