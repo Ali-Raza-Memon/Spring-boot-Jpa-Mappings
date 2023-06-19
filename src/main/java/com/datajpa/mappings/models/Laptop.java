@@ -15,4 +15,5 @@ public class Laptop {
 
     @OneToOne
     private Student student;
+
 }
